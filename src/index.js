@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 targetSquare.style.backgroundColor = "red";
             }
 
-            checkGameOver(); // Überprüfen, ob das Spiel vorbei ist
+            checkGameOver(); 
         }
     }
 }
@@ -352,8 +352,6 @@ document.addEventListener("DOMContentLoaded", () => {
       isHorizontal ? offset : [offset[1], offset[0]]
     );
 
-    // Validate
-
 
     // Gültige Platzierung
     if (canPlaceShip) {
@@ -367,7 +365,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
       playerShipsPlaced++;
-      // Prüfe, ob alle Schiffe platziert wurden und starte das Spiel
       if (playerShipsPlaced === maxPlayerShips) {
         startGame();
       }
